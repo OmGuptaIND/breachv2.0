@@ -15,7 +15,7 @@ export default function Carousal() {
     // setTimeout(()=>nextSlide(), 4000);
     return (
         <Container>
-            {data?.map( (doc, index) => <> { index === current && <CarousalCard prevSlide = {prevSlide} nextSlide = {nextSlide}  doc={doc} /> } </> )}
+            {data?.map( (doc, index) => <> { index === current && <CarousalCard key = {doc.id} prevSlide = {prevSlide} nextSlide = {nextSlide}  doc={doc} /> } </> )}
         </Container>
     )
 }

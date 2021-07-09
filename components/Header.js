@@ -5,42 +5,44 @@ import DropDown from './DropDown';
 import { useState } from "react";
 import MenuIcon from '@material-ui/icons/Menu';
 import { devicesSmall } from "../devices";
+import { useRouter } from "next/router";
 export default function Header() {
     const [showArticles, setShowArticles] = useState(false);
     const [showPages, setShowPages] = useState(false);
+    const router = useRouter()
   return (
     <Container>
-      <Logo>Breach.</Logo>
+      <Logo onClick = {() => router.push('/')} >Breach.</Logo>
       <HeaderOptions>
         <Options>
-          <Links>Home</Links>
+          <Links onClick = {() => router.push('/')} >Home</Links>
         </Options>
-        <Options onMouseEnter = {(e) => setShowArticles(true)} onMouseLeave = {() => setShowArticles(false)} >
-          <Links>Articles</Links>
-            <DropIcon fontSize='small' />
-          <DropDown show = {showArticles}>
-            <DropOptionsContainer>
-                <DropOptions>Videos</DropOptions>
-                <DropOptions>Newsletters</DropOptions>
-                <DropOptions>Inforgraphics</DropOptions>
-                <DropOptions>Coming Soon...</DropOptions>
-            </DropOptionsContainer>
-          </DropDown>
+        <Options>
+          <Links onClick = {() => router.push('/articles')} >Articles</Links>
         </Options>
         <Options onMouseEnter = {(e) => setShowPages(true)} onMouseLeave = {() => setShowPages(false)} >
           <Links>Pages</Links>
           <DropIcon fontSize='small' />
           <DropDown show = {showPages}>
             <DropOptionsContainer>
-                <DropOptions>About Us</DropOptions>
-                <DropOptions>Contact Us</DropOptions>
-                <DropOptions>FAQ</DropOptions>
+                <DropOptions onClick = {() => router.push('/about')} >About Us</DropOptions>
+                <DropOptions onClick = {() => router.push('/contact')} >Contact Us</DropOptions>
+                <DropOptions onClick = {() => router.push('/faq')} >FAQ</DropOptions>
                 <DropOptions>Coming Soon...</DropOptions>
             </DropOptionsContainer>
           </DropDown>
         </Options>
-        <Options>
-          <Links>Docs</Links>
+        <Options onMouseEnter = {(e) => setShowArticles(true)} onMouseLeave = {() => setShowArticles(false)} >
+          <Links>Others</Links>
+          <DropIcon fontSize='small' />
+          <DropDown show = {showArticles}>
+            <DropOptionsContainer>
+                <DropOptions onClick = {() => router.push('/videos')} >Videos</DropOptions>
+                <DropOptions onClick = {() => router.push('/newsletters')} >Newsletters</DropOptions>
+                <DropOptions onClick = {() => router.push('/inforgraphics')} >Inforgraphics</DropOptions>
+                <DropOptions>Coming Soon...</DropOptions>
+            </DropOptionsContainer>
+          </DropDown>
         </Options>
       </HeaderOptions>
       <UtilityContainer>
