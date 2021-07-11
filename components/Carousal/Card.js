@@ -26,7 +26,7 @@ const Container = styled.div`
     @media ${device.tablet}
     {
         top: 20%;
-        left: 0%;
+        left: 1%;
         padding: 0px 10px;
     }
 `;
@@ -35,7 +35,7 @@ const CardData = styled.div`
     margin-bottom: 30px;
     @media ${device.tablet}
     {
-        width: 97vw;
+        width: 93vw;
     }
 `;
 const Tags = styled.div`

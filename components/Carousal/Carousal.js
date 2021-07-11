@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import CarousalCard from './CarousalCard';
-import data from './Data';
+import data from '../../Data/ArticlesData';
 
 export default function Carousal() {
     const [current, setCurrent] = useState(0);

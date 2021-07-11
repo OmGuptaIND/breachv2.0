@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import SearchIcon from '@material-ui/icons/Search';
-import DropDown from './DropDown';
+import DropDown from '../DropDown';
 import { useState } from "react";
 import MenuIcon from '@material-ui/icons/Menu';
-import { devicesSmall } from "../devices";
+import { devicesSmall } from "../../devices";
 import { useRouter } from "next/router";
 export default function Header() {
     const [showArticles, setShowArticles] = useState(false);

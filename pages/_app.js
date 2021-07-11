@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import '../styles/globals.css'
 
 //Components
-import Header from '../components/Header';
+import Header from '../components/Partials/Header';
+import Footer from '../components/Partials/Footer';
 import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
@@ -10,9 +11,11 @@ function MyApp({ Component, pageProps }) {
     <Container>
       <Header />
       <Head>
-        <title>Breach.</title>
+        <link rel = 'icon' href = '/logo/logo.svg' />
+        <title>Breach | Opinion is now a choice</title>
       </Head>
       <Component {...pageProps} />
+      <Footer />
     </Container>
 
   )
