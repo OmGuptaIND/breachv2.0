@@ -10,7 +10,7 @@ export default function Footer() {
             <LogoContainer>
                 <Logo><span>B</span>reach<span>.</span></Logo>
                 <Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta finibus justo, vestibulum finibus justo gravida ac. Phasellus hendrerit elementum turpis, ac ornare lectus imperdiet sed.</Description>
-                <AboutBtn>About Us ></AboutBtn>
+                <AboutBtn>About Us</AboutBtn>
             </LogoContainer>
 
             <HeadContainer>
