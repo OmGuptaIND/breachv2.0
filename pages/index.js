@@ -2,7 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styled from 'styled-components';
 import HeroPage from '../components/HeroPage';
+import EditorsPick from '../components/Homepage/EditorsPick';
 import Recent from '../components/Homepage/Recent';
+import TopCategories from '../components/Homepage/TopCategories';
 import { devicesSmall } from '../devices';
 export default function Home() {
   return (
@@ -10,6 +12,12 @@ export default function Home() {
       <HeroPage />
       <SectionContainer>
         <Recent />
+      </SectionContainer>
+      <SectionContainer>
+        <EditorsPick />
+      </SectionContainer>
+      <SectionContainer>
+        <TopCategories />
       </SectionContainer>
     </Container>
   )
@@ -24,5 +32,6 @@ const SectionContainer = styled.div`
     @media ${devicesSmall.tablet}
     {
         padding: 20px 5%;
+        margin-bottom: 60px;
     }
 `;

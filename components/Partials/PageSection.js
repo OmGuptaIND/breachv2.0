@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { device, devicesSmall } from "../../devices";
 
-export default function PageSection({children, color}) {
+export default function PageSection({children, color, show = true}) {
     return (
         <Container>
             <TitleContainer>
                 <SideBorder color = {color}/>
                 {children}
             </TitleContainer>
-            <ViewMore>
+            <ViewMore show = {show} >
                 <p>See All</p>
             </ViewMore>
         </Container>
@@ -41,6 +41,7 @@ const TitleContainer = styled.div`
 `;
 
 const ViewMore = styled.div`
+    display: ${props => props.show ? 'inline-block' : 'none'};
     >p{
         font-family: var(--font-assent);
         font-weight: 100;

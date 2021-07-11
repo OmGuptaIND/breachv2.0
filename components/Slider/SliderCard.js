@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import Image from 'next/image';
 import blurEffect from "../../utils/BlurEffect";
+import { Avatar } from "@material-ui/core";
 
-export default function SliderCard({imgUrl, text}) {
+export default function SliderCard({doc}) {
   return (
     <Card>
       <ImageContainer>
@@ -10,24 +11,38 @@ export default function SliderCard({imgUrl, text}) {
           width='250px'
           height='150px'
           layout='responsive'
-          src={imgUrl}
+          src={doc?.imgUrl}
           alt='imageErr'
           placeholder='blur'
           blurDataURL={blurEffect}
         />
       </ImageContainer>
-      <p>
-        {text}
-      </p>
+      <CardContainer>
+        <AvatarImage src = {doc?.author?.authorimgUrl} alt = {doc?.author?.authorName} />
+        <CardData>
+          <h1>{doc.title}</h1>
+          <Author>{doc.author.authorName}</Author>
+          <ArticleData>
+            <p>{doc.readTime} mins</p>
+            <span>.</span>
+            <ReadTime>21 May 2021</ReadTime>
+          </ArticleData>
+        </CardData>
+      </CardContainer>
     </Card>
   );
 }
 const Card = styled.div`
-  width: 250px;
-  height: 285px;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  width: 290px;
+  height: auto;
   background-color: white;
   border-radius: 10px;
-  margin-right: 20px;
+  margin-right: 25px;
   background-color: #121212;
   display: flex;
   align-items: center;
@@ -56,4 +71,57 @@ const ImageContainer = styled.div`
 const ImageDiv = styled(Image)`
   border-radius: 10px 10px 0px 0px;
   object-fit: cover;
+`;
+
+
+
+const CardContainer = styled.div`
+  margin-top: -10px;
+  padding: 0px 2%;
+  margin-bottom: 10px;
+`;
+
+const ArticleData = styled.div`
+  display: flex;
+  align-items: center;
+  >p{
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+  >span{
+    margin: 0px 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+`;
+const Author = styled.p`
+  color: var(--color-under);
+  font-weight: 200;
+  margin-top: 10px;
+  letter-spacing:1px;
+`;
+const ReadTime = styled.p`
+  font-weight: bold;
+  color: var(--color-btn);
+`;
+const CardData = styled.div`
+  > h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    height: 90px;
+  }
+  > p {
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+`;
+const AvatarImage = styled(Avatar)`
+  margin-bottom: 10px;
+  &&&{
+    width:50px;
+    height:50px
+  }
 `;
