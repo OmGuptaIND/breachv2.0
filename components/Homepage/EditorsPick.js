@@ -14,5 +14,5 @@ export default function EditorsPick() {
 }
 
 const Container = styled.div`
-    margin-bottom: 30px;
+
 `;
