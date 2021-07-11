@@ -119,18 +119,19 @@ const Container = styled.div`
     grid-template-columns: 1fr;
     border-top: 0.6px solid var(--color-under);
     border-bottom: 0.6px solid var(--color-under);
-    padding: 20px 4%;
+    padding: 20px 2%;
+    grid-gap: 40px;
     transition: all 0.6s ease-in-out;
     @media ${devicesSmall.tablet}
     {
-        padding: 20px 5%;
+        padding: 20px 2%;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
+        grid-gap: 30px;
     }
     @media ${devicesSmall.laptop}
     {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 0.8fr;
+        grid-gap: 30px;
     }
 `;
 
@@ -274,6 +275,7 @@ const AvatarImage = styled(Avatar)`
     height:50px
   }
 `;
+
 const Creator = styled.div`
     text-align: start;
     >h1{
