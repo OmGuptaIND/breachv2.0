@@ -16,7 +16,7 @@ const data = [
         id: Math.floor(Math.random() * 1000),
         imgUrl: '/images/two.jpeg',
         title: '7 Blog That Will Actually Make Your Life Better.',
-        desc:'Aliqua non fugiat exercitation enim reprehenderit. Culpa reprehenderit in est duis nisi. Lorem est nostrud elit do cillum reprehenderit ea duis',
+        desc:'Aliqua non fugiat exercitation enim reprehenderit. Culpa reprehenderit in est duis nisi. Lorem est nostrud elit',
         author: {
             authorId: toString(Math.floor(Math.random() * 1000)),
             authorName: 'Krishna Kulshreshta',
@@ -63,7 +63,20 @@ const data = [
         },
         readTime:'10',
         tags:['Latest', 'India']
-    }
+    },
+    {
+        id: Math.floor(Math.random() * 1000),
+        imgUrl: '/images/three.jpeg',
+        title: '18 Free Title Generator Tools for Writing Better Headlines',
+        desc:'lorem Lorem ipsum dolor Sed tempor sem non augue gravida, viverra lacinia purus mattis. Maecenas nec vestibulum orci.',
+        author: {
+            authorId: toString(Math.floor(Math.random() * 1000)),
+            authorName: 'Arjun Sexena',
+            authorimgUrl :'/images/four.jpeg'
+        },
+        readTime:'10',
+        tags:['Ongoing', 'Religion']
+    },
 
 ];
 

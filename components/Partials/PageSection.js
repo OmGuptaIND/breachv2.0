@@ -18,12 +18,6 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding: 20px 2%;
-    transition: all 0.6s ease-in-out;
-    @media ${devicesSmall.tablet}
-    {
-        padding: 20px 5%;
-    }
 `;
 const SideBorder = styled.div`
     width:8px;
