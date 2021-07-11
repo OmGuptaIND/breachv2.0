@@ -32,7 +32,7 @@ export default function TopCategories() {
                 <h1>Top Categories</h1>
             </PageSection>
             <CategoriedContainer>
-                {Data?.map(doc => <CategoriesCard doc={doc} />)}
+                {Data?.map(doc => <CategoriesCard key = {doc?.id} doc={doc} />)}
             </CategoriedContainer>
         </Container>
     )

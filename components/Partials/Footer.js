@@ -60,7 +60,7 @@ export default function Footer() {
             <HeadContainer>
                 <ContainerHeader>Creators</ContainerHeader>
                 <CreatorCard>
-                    <AvatarImage placeholder='blur' blurDataURL={blurEffect} src = '/images/one.jpeg' alt = 'Om Gupta' />
+                    <AvatarImage src = '/images/one.jpeg' alt = 'Om Gupta' />
                     <Creator>
                         <h1>Om Gupta</h1>
                         <p>21 Articles</p>
@@ -68,7 +68,7 @@ export default function Footer() {
                 </CreatorCard>
 
                 <CreatorCard>
-                    <AvatarImage placeholder='blur' blurDataURL={blurEffect} src = '/images/two.jpeg' alt = 'Om Gupta' />
+                    <AvatarImage src = '/images/two.jpeg' alt = 'Om Gupta' />
                     <Creator>
                         <h1>Krishna Kulshreshta</h1>
                         <p>21 Articles</p>
@@ -76,7 +76,7 @@ export default function Footer() {
                 </CreatorCard>
 
                 <CreatorCard>
-                    <AvatarImage placeholder='blur' blurDataURL={blurEffect} src = '/images/three.jpeg' alt = 'Om Gupta' />
+                    <AvatarImage src = '/images/three.jpeg' alt = 'Om Gupta' />
                     <Creator>
                         <h1>Vansh Mahajan</h1>
                         <p>21 Articles</p>
@@ -84,7 +84,7 @@ export default function Footer() {
                 </CreatorCard>
 
                 <CreatorCard>
-                    <AvatarImage placeholder='blur' blurDataURL={blurEffect} src = '/images/four.jpeg' alt = 'Om Gupta' />
+                    <AvatarImage src = '/images/four.jpeg' alt = 'Om Gupta' />
                     <Creator>
                         <h1>Ananya Nautiyal</h1>
                         <p>21 Articles</p>
@@ -92,7 +92,7 @@ export default function Footer() {
                 </CreatorCard>
 
                 <CreatorCard>
-                    <AvatarImage placeholder='blur' blurDataURL={blurEffect} src = '/images/five.jpeg' alt = 'Om Gupta' />
+                    <AvatarImage src = '/images/five.jpeg' alt = 'Om Gupta' />
                     <Creator>
                         <h1>Diya Rajvanshi</h1>
                         <p>21 Articles</p>
@@ -100,7 +100,7 @@ export default function Footer() {
                 </CreatorCard>
 
                 <CreatorCard>
-                    <AvatarImage placeholder='blur' blurDataURL={blurEffect} src = '/images/three.jpeg' alt = 'Om Gupta' />
+                    <AvatarImage src = '/images/three.jpeg' alt = 'Om Gupta' />
                     <Creator>
                         <h1>Arjun Saxena</h1>
                         <p>21 Articles</p>
