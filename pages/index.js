@@ -11,58 +11,6 @@ export default function Home() {
       <SectionContainer>
         <Recent />
       </SectionContainer>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-      <p>lorem ipsum dolor sit amet, consectetur adip</p>
-
     </Container>
   )
 }

@@ -4,6 +4,7 @@ import '../styles/globals.css'
 //Components
 import Header from '../components/Partials/Header';
 import Footer from '../components/Partials/Footer';
+import Copyright from '../components/Partials/Copyright';
 import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Component {...pageProps} />
       <Footer />
+      <Copyright />
     </Container>
 
   )

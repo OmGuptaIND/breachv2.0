@@ -12,7 +12,7 @@ export default function Header() {
     const router = useRouter()
   return (
     <Container>
-      <Logo onClick = {() => router.push('/')} >Breach.</Logo>
+      <Logo onClick = {() => router.push('/')} ><span>B</span>reach<span>.</span></Logo>
       <HeaderOptions>
         <Options>
           <Links onClick = {() => router.push('/')} >Home</Links>
@@ -76,6 +76,9 @@ const Logo = styled.h1`
     font-size: 40px;
     cursor: pointer;
     transition: all 0.6s ease-in-out;
+    >span{
+      color: var(--color-btn);
+    }
     @media ${devicesSmall.mobileL}
     {
         font-size:45px;
