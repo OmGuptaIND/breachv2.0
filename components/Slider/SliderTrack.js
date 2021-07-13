@@ -17,7 +17,6 @@ export default function SliderTrack({children}) {
         {
             transform = parseInt(transformMatrix.split(',')[4].trim());
         }
-        console.log(transform);
     }
     const handleGestureMove = (e) => {
         if(moving){
