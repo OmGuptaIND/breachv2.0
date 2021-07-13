@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styled from 'styled-components';
 import HeroPage from '../components/HeroPage';
 import EditorsPick from '../components/Homepage/EditorsPick';
+import Infographics from '../components/Homepage/Infographics';
 import Recent from '../components/Homepage/Recent';
 import TopCategories from '../components/Homepage/TopCategories';
 import { devicesSmall } from '../devices';
@@ -15,6 +16,9 @@ export default function Home() {
       </SectionContainer>
       <SectionContainer>
         <EditorsPick />
+      </SectionContainer>
+      <SectionContainer>
+        <Infographics />
       </SectionContainer>
       <SectionContainer>
         <TopCategories />

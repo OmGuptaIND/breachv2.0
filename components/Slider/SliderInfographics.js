@@ -3,7 +3,7 @@ import Image from 'next/image';
 import blurEffect from "../../utils/BlurEffect";
 import { Avatar } from "@material-ui/core";
 
-export default function SliderCard({doc}) {
+export default function SliderInfographics({doc}) {
   return (
     <Card>
       <ImageContainer>
@@ -20,8 +20,8 @@ export default function SliderCard({doc}) {
       <CardContainer>
         <AvatarImage src = {doc?.author?.authorimgUrl} alt = {doc?.author?.authorName} />
         <CardData>
-          <h1>{doc.title}</h1>
-          <Author>{doc.author.authorName}</Author>
+          <h1>{doc?.title}</h1>
+          <Author>{doc?.author.authorName}</Author>
           <ArticleData>
             {doc?.readTime && <p>{doc.readTime} mins</p>}
             {doc?.readTime && (<span>.</span>)}
