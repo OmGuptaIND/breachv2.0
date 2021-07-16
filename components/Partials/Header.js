@@ -3,9 +3,9 @@ import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import SearchIcon from '@material-ui/icons/Search';
 import DropDown from '../DropDown';
 import { useState } from "react";
-import MenuIcon from '@material-ui/icons/Menu';
 import { devicesSmall } from "../../devices";
 import { useRouter } from "next/router";
+import Hamburger from "./Hamburger";
 export default function Header() {
     const [showArticles, setShowArticles] = useState(false);
     const [showPages, setShowPages] = useState(false);
@@ -49,9 +49,7 @@ export default function Header() {
         <SearchDiv fontSize='large' />
         <Contribute>Contribute</Contribute>
       </UtilityContainer>
-    <Drawer>
-        <MenuIcon fontSize = 'large' />
-    </Drawer>
+    <Hamburger />
     </Container>
   );
 }
@@ -156,13 +154,5 @@ const DropOptions = styled.p`
     z-index: 1;
     :hover{
         
-    }
-`;
-
-const Drawer = styled.div`
-    transition: all 0.6s ease-in-out;
-    @media ${devicesSmall.tablet}
-    {
-        display: none;
     }
 `;
